@@ -38,10 +38,19 @@ newSubscriber
     }
 
 
-publisher.send(10)
+/*publisher.send(10)
 publisher.send(30)
 publisher.send(20)
 publisher.send(28)
 
-publisher.send(completion: Subscribers.Completion<PublisherError>.failure(.usualError))
- 
+publisher.send(completion: Subscribers.Completion<PublisherError>.failure(.usualError))*/
+
+let justPublisher = Just(5)
+let justSubscriber = justPublisher
+    .filter{$0 <= 5}
+    .sink { completion in
+        print(completion)
+    } receiveValue: { value in
+        print(value)
+    }
+
