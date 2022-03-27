@@ -14,6 +14,7 @@
 		546D49FF2771FEAA00857564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546D49FE2771FEAA00857564 /* Assets.xcassets */; };
 		546D4A022771FEAA00857564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D4A002771FEAA00857564 /* LaunchScreen.storyboard */; };
 		546D4A0A2771FEF700857564 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D4A092771FEF700857564 /* Network.swift */; };
+		54B521F527F09C98004143A7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B521F427F09C98004143A7 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		546D4A012771FEAA00857564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546D4A032771FEAA00857564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546D4A092771FEF700857564 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		54B521F427F09C98004143A7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				546D49F72771FEA700857564 /* SceneDelegate.swift */,
 				546D49F92771FEA700857564 /* ViewController.swift */,
 				546D4A092771FEF700857564 /* Network.swift */,
+				54B521F427F09C98004143A7 /* ViewModel.swift */,
 				546D49FB2771FEA700857564 /* Main.storyboard */,
 				546D49FE2771FEAA00857564 /* Assets.xcassets */,
 				546D4A002771FEAA00857564 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B521F527F09C98004143A7 /* ViewModel.swift in Sources */,
 				546D49FA2771FEA700857564 /* ViewController.swift in Sources */,
 				546D49F62771FEA700857564 /* AppDelegate.swift in Sources */,
 				546D4A0A2771FEF700857564 /* Network.swift in Sources */,

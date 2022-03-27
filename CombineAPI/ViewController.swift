@@ -23,8 +23,15 @@ class ViewController: UIViewController {
             }
             .store(in: &cancellables)
         
+        handleViewModel()
     }
 
+    func handleViewModel(){
+        Network.shared.$viewModelInfo.sink { info in
+            print("Did receive view model : \(info)")
+        }
+        .store(in: &cancellables)
+    }
 
 }
 

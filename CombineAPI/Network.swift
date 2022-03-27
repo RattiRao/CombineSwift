@@ -19,6 +19,7 @@ struct DummyData: Codable{
 
 class Network {
     static let shared: Network = Network()
+    @Published var viewModelInfo: ViewModel?
     var cancellables: Set<AnyCancellable> = Set()
     
     func getDummyData<T:Codable>(url: String, type: T.Type) -> Future<T, MyError>{
@@ -34,6 +35,7 @@ class Network {
                 .sink { completion in
                     print(completion)
                 } receiveValue: { value in
+                    self.viewModelInfo = ViewModel.init(model: value as! DummyData)
                     promise(.success(value))
                 }
                 .store(in: &self.cancellables)
